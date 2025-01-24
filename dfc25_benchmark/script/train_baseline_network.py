@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/chenhrx/project/BRIGHT/dfc25_benchmark') # change this to the path of your project
+sys.path.append('/ssd_scratch/cvit/yash/BRIGHT/dfc25_benchmark') # change this to the path of your project
 
 import argparse
 import os
@@ -193,7 +193,7 @@ def main():
     parser.add_argument('--cuda', type=bool, default=True)
     parser.add_argument('--max_iters', type=int, default=240000)
     parser.add_argument('--model_type', type=str)
-    parser.add_argument('--model_param_path', type=str, default='/home/songjian/project/BRIGHT/dfc25_benchmark/saved_weights')
+    parser.add_argument('--model_param_path', type=str, default='/ssd-scratch/cvit/yash/BRIGHT/dfc25_benchmark/saved_weights')
 
     parser.add_argument('--resume', type=str)
     parser.add_argument('--learning_rate', type=float, default=1e-4)
